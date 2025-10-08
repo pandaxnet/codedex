@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bryan's Restaurant</title>
+        <style>
+            html {
+               scroll-behavior: smooth;
+          }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f8f8;
+            }
+            header {
+                background-color: #ff6347;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            #header-img {
+                width: 100px;
+                height: auto;
+                border-radius: 50%;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            .nav-link {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            main {
+                padding: 20px;
+            }
+            section {
+                margin-bottom: 40px;
+            }
+            h2 {
+                border-bottom: 2px solid #ff6347;
+                padding-bottom: 5px;
+            }
+            article {
+                background-color: white;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            article img {
+                width: 30%;
+                height: auto;
+                border-radius: 5px;
+            }
+            form label {
+                display: block;
+                margin-top: 10px;
+            }
+            form input[type="number"] {
+                width: 50px;
+                margin-left: 10px;
+            }
+            form input[type="checkbox"] {
+                margin-left: 10px;
+            }
+            form textarea {
+                width: 100%;
+                height: 80px;
+                margin-top: 10px;
+            }
+            form input[type="submit"] {
+                background-color: #ff6347;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="header-img" src="https://images.unsplash.com/photo-1555992336-cbf3c4f6c6d6" alt="Restaurant image">
+            <h1>Bryan's Restaurant</h1>
+            <nav>
+                <a class="nav-link" href="#menu">Menu</a>
+                <a class="nav-link" href="#order">Order</a>
+            </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <article>
+                    <h3>Pizza</h3>
+                    <img src="https://images.unsplash.com/photo-1601924582971-c9c7a3b8e6b0" alt="Pizza image">
+                    <p>Delicious cheese pizza with fresh ingredients.</p>
+                    <p>Price: $10.00</p>
+                </article>
+                <article>
+                    <h3>Burger</h3>
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger image">
+                    <p>Juicy beef burger with lettuce, tomato, and cheese.</p>
+                    <p>Price: $8.00</p>
+                </article>
+                <article>
+                    <h3>Pasta</h3>
+                    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" alt="Pasta image">
+                    <p>Classic Italian pasta with marinara sauce and parmesan.</p>
+                    <p>Price: $12.00</p>
+                </article>
+            </section>
+            <section id="order">
+                <h2>Order</h2>
+                <form>
+                    <label>Pizza</label>
+                    <input type="number" min="0" value="0" id="pizza" name="pizza"><br>
+                    <label>Burger</label>
+                    <input type="number" min="0" value="0" id="burger" name="burger"><br>
+                    <label>Pasta</label>
+                    <input type="number" min="0" value="0" id="pasta" name="pasta"><br>
+                    <label>Sides:</label><br>
+                    <label for="fries">Fries ($3.00)</label><br>
+                    <input type="checkbox" id="fries" name="sides" value="fries">
+                    
+                    <label for="salad">Salad ($4.00)</label><br>
+                    <input type="checkbox" id="salad" name="sides" value="salad">
+                    
+                    <label for="drink">Drink ($2.00)</label><br>
+                    <input type="checkbox" id="drink" name="drink" value="drink">
+                    
+                    <textarea placeholder="Special requests"></textarea><br>
+                    <input type="submit" value="Go to Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by @pandaxPR</p>
+        </footer>
+    </body>
+</html>
