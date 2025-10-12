@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header_one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.header_one h1 {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.header_one h1 span {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f5deb3;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav_links li a:hover {
+    color: #e1e1e1;
+    text-decoration: underline ;
+}
+
+.video_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+  
+    
+}
+
+.Home p {
+    color: #f5deb3;
+    font-size: 28px;
+    font-weight: bold;
+    max-width: 900px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-top: 40px;
+    text-align:justify;
+}
+
+/********************** About Me ************************/
+.About_Me{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.container p{
+    color: #f5deb3;
+    font-size: 30px;
+    text-align:justify;
+    width: 750px;
+    
+}
+.AboutMeInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.line1{
+    
+    background-color: white;
+    height: 700px;
+    width: 3px;
+    margin-right: 125px;
+}
+.mainContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.line2{
+    background-color: white;
+    height: 3px;
+    width: 1800px;
+    margin-top: 50px;
+}
+.eyeVideo{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+#aboutMeText{
+    position: fixed;
+    z-index: -1;
+}
+    
+ /**************** Contact **************/
+ .Contact_tab{
+	height: 100vh;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 15%;
+	padding-right: 15%;
+	position: absolute;
+	z-index: 2;
+	background-color: black;
+	width: 100%;
+}
+.Email h1{
+	color: #f5deb3;
+	font-size:60px;
+}
+.Email span{
+	color: white;
+	font-size: 35px;
+}
+.Social h1{
+	color: #f5deb3;
+	font-size: 60px;
+}
+.Social_logos{
+	display: flex;
+	align-content: center;
+	margin: 25px;
+}
+.Social_logos label{
+	padding-left: 15px;
+	padding-top: 6px;
+}
+.Social_logos img{
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+}
+#insta{
+    height: 60px;
+    width: 60px;
+}
+#github{
+    padding-left: 4px;
+}
+#github label{
+    padding-left: 21px;
+}
+.Social label{
+	color: white;
+	font-size: 35px;
+}
+.Contact_info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.Contact_info input{
+	width: 320px;
+	height: 50px;
+	background: transparent;
+	color: white;
+	font-size: 20px;
+	padding: 0 10px;
+	border: 1.2px solid white;
+	outline: none;
+	border-radius: 5px;
+}
+.input_group{
+
+	position: relative;
+	margin: 20px 0;
+
+}
+.input_group label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: white;
+	padding: 0 5px;
+	pointer-events: none;
+	transition: .5s;
+}
+.input_group input:focus~label,
+.input_group input:valid~label {
+	top:0;
+	font-size: 16px;
+	background: black;
+}
+.Contact_info textarea{
+	width: 320px;
+	height: 50px;
+	color: white;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1.2px solid white;
+	padding-left: 10px;
+	padding-top: 5px;
+	resize: none;
+	transition: 0.7s ease-in-out;
+	outline: none;
+	font-size: 20px;
+}
+.Contact_info textarea:focus{
+	height: 150px;
+
+}
+::placeholder{
+	color: white;
+	font-size: 20px;
+}
+
+#submitbtn {
+    width: 120px;
+    height: 37px;
+    border-radius: 12px;
+    background-color: #3e3e3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  #submitbtn:hover {
+    background-color: #f5deb3; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+ 
+  #submitbtn:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+.message_btn{
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+	padding-top: 0;
+}
+.Contact_info h1{
+	color: #f5deb3;
+	font-size:60px;
+}

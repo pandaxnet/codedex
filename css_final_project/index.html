@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header_one">
+		<h1>Bryan Luciano <span>Web Developer</span></h1>
+		<ul class="nav_links">
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#About_Me">About Me</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</header>
+    <div class="Home" id="Home">
+
+       
+        <video autoplay loop muted plays-inline class="video_background">
+            <source src="background_coding.mp4" type="video/mp4">
+        </video>
+
+        <p id="aboutMeText">I am a programming student with hands-on experience in HTML, CSS, JavaScript,
+            PHP, and Java. Based in Puerto Rico, I focus on building functional, clean,
+            and well-structured web applications while continuously expanding my skill set.</p>
+    </div>
+
+
+
+    <!------------ About ME ---------------->
+
+
+
+    <div class="About_Me" id="About_Me">
+            <div class="mainContainer">
+                <div class="AboutMeInfo">
+                    <div class="container">
+                            <p>I’m a programming student from Puerto Rico with a strong interest in backend development.
+                            I’m passionate about learning, solving complex problems, and constantly pushing myself to improve.
+                            My goal is to build a career that allows me to earn well without having to leave Puerto Rico, 
+                            and one day be able to support and retire my parents. I’m a kind person who enjoys a good challenge, 
+                            adapts easily to different situations, and is always eager to grow both personally and professionally.
+                            </p>
+                    </div>
+                    <div class="image">
+                        
+                        <video autoplay loop muted plays-inline class="eyeVideo">
+                            <source src="eye.mp4" type="video/mp4">
+                    </div>
+                </div>
+                <div class="line1">
+                </div>
+            </div>
+            <div class="line2">
+
+            </div>
+    </div>
+
+    <!--------------- Contact --------------------->
+    <div class="Contact_tab" id="Contact">
+		<div class="Eml_Soc">
+			<div class="Email">
+				<h1>Email</h1> <br>
+				
+				<span>brylucnaz@gmail.com</span>
+			</div>
+			<div class="Social">
+				<br><br>
+				<h1>Social media</h1> 
+				<div class="Social_logos" >
+					<img src="insta_logo_black.jpg" alt="insta logo" id="insta">
+					<label>bryanazario</label>
+				</div>
+				<div class="Social_logos" id="github">
+					<img src="githubLogo.png" alt="github logo">
+					<label>pandaxnet</label>
+				</div>
+				
+			</div>
+		</div>
+		<div class="Contact_info">
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="9a420e32-2d26-4cb8-aa69-3e3af4fc6b7a">
+					<h1>Contact Me</h1>
+					<br>
+				<div class="input_group">
+					<input type="text" name="first_name" id="name" required>
+					<label for="name">Name</label>
+				</div>
+				<div class="input_group" action="https://api.web3forms.com/submit" method="POST">
+					<input type="text" name="email" id="email" required>
+					<label for="email">Email</label>
+				</div>
+				<div class="message_btn">
+				<label for="message">Message:</label>
+				<textarea action="https://api.web3forms.com/submit" method="POST"  name="message" placeholder="Hello:"></textarea><br><br>
+				<input type="submit" id="submitbtn">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
